@@ -82,8 +82,7 @@ class Bot {
 }
 
 
-
-class Bot_2 extends Bot{
+ class Bot_2 extends Bot{
 
     HashMap<Integer, String[]> chatSequence = new HashMap<>();
     int count = 0;
@@ -98,19 +97,21 @@ class Bot_2 extends Bot{
         chatSequence.put(0, new String[]{"Good Morning"});
         chatSequence.put(1, new String[]{"Kumain ka na?"});
         chatSequence.put(2, new String[]{"Buti namn,sarap siguro ng ulam mo","kain kna po libre kita"});
-        chatSequence.put(3, new String[]{"May tanong pala ko"});
-        chatSequence.put(4, new String[]{"Baket ang ganda mo po haha"});
-        chatSequence.put(5, new String[]{"haha haba ng hair", "oo nga po haha","yieeh humble haha"});//(acceptance)(not sure)(denial)
-        chatSequence.put(6, new String[]{"uhm..gusto ko lng sana sabihin na gusto kita"});
-        chatSequence.put(7, new String[]{"sorry kung nabigla ka, nakakahiya tuloy "});
-        chatSequence.put(8, new String[]{"Nga pala dba sabi mo wala ka lakad sa 14?"});
-        chatSequence.put(9, new String[]{"Mall tayo? libre ko"});
-        chatSequence.put(10, new String[]{"haha yown haha excited nko haha","ayy wag ka po mahiya ako lng namn to","oo basta ikaw"});//sige, kakahiya, sure ka?
-        chatSequence.put(11, new String[]{"Sakto wla tau kavalentines kaya tayo nalng"});
-        chatSequence.put(12, new String[]{"haha wala na atrasan ah ?"});
-        chatSequence.put(13, new String[]{"wait lng po ah"});
-        chatSequence.put(14, new String[]{"Sabhin ko kay mama ako na maghugas ng plato"});
-        chatSequence.put(15, new String[]{"Maya ulet haha bye na<3"});
+        chatSequence.put(3, new String[]{"May tanong pala ko haha"});
+        chatSequence.put(4, new String[]{"Floor wax ka ba?"});
+        chatSequence.put(5, new String[]{"I love you, ay sorry nadulas haha"});
+        chatSequence.put(6, new String[]{"Ganda mo pala ngayon :)"});
+        chatSequence.put(7, new String[]{"haha haba ng hair", "oo nga po haha","yieeh humble haha"});//(acceptance)(not sure)(denial)
+        chatSequence.put(8, new String[]{"uhm..gusto ko lng sana sabihin na gusto kita"});
+        chatSequence.put(9, new String[]{"sorry kung nabigla ka, nakakahiya tuloy "});
+        chatSequence.put(10, new String[]{"Nga pala dba sabi mo wala ka lakad sa 14?"});
+        chatSequence.put(11, new String[]{"Mall tayo? libre ko"});
+        chatSequence.put(12, new String[]{"haha yown haha excited nko haha","ayy wag ka po mahiya ako lng namn to","oo basta ikaw"});//sige, kakahiya, sure ka?
+        chatSequence.put(13, new String[]{"Sakto wla tau kavalentines kaya tayo nalng"});
+        chatSequence.put(14, new String[]{"haha wala na atrasan ah ?"});
+        chatSequence.put(15, new String[]{"wait lng po ah"});
+        chatSequence.put(16, new String[]{"Sabhin ko kay mama ako na maghugas ng plato"});
+        chatSequence.put(17, new String[]{"Maya ulet haha bye na<3"});
     }
 
     List<Integer> messageRequirements(String[] msg){
@@ -119,19 +120,19 @@ class Bot_2 extends Bot{
         if(count==2){
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"oo", "tapos","opo","kanina","kakatapos"}));
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"hindi", "di","gutom","wala"}));
-        }else if (count==5){
+        }else if (count==7){
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"salamat","thank", "thanks","oo","ikr","know"}));
-            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"ay", "ayy","haha","weh","di nga","echosero","bolero","joker","luh"}));
+            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"ay", "ayy","haha","weh","di nga","echosero","bolero","joker"}));
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"hindi", "loko","di","najojoke","baliw", "wala","magpapalibre"}));
 
-        }else if(count==10){
+        }else if(count==12){
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"sige","okie", "okay","ok","tara","g","go"}));
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"ay", "ayy","haha","weh","di nga","kakahiya","hiya"}));
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"kahiya","wala","magpapalibre","nakain","libre"}));
 
         }
         else {
-            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"weh","ay","ayy","ha","huh","hah","seryoso","hala","luh","yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
+            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
         }
         return reply_percentage;
     }
@@ -159,7 +160,7 @@ class Bot_2 extends Bot{
     String response(String message){
         String[] msg =message.split("[\\s,.?:-]");
 
-        if(count>=15){
+        if(count>=17){
             stop=true;
         }
 
@@ -167,8 +168,6 @@ class Bot_2 extends Bot{
     }
 
 }
-
-
 
 
 class BotResponse {
