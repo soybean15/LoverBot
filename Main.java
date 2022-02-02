@@ -131,7 +131,7 @@ class Bot_2 extends Bot{
 
         }
         else {
-            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"ha","huh","hah","seryoso","hala","luh","yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
+            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"weh","ay","ayy","ha","huh","hah","seryoso","hala","luh","yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
         }
         return reply_percentage;
     }
