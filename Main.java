@@ -216,48 +216,6 @@ class BotResponse {
 
 
 
-class LoveBot {
-    Screen screen = new Screen();
-    Scanner sc = new Scanner(System.in);
-
-    String message(String prompt){
-        System.out.print(prompt);
-        return sc.nextLine();
-    }
-    void start(){
-        screen.generateScreen();
-
-        screen.newMessageScreen();
-        screen.printScreen();
-        message("Read Message:");
-        screen.clear();
-        screen.addMessage("Remove First Text");
-        screen.printScreen();
-
-
-        while(!Bot_2.stop){
-
-            screen.addMessage(message("Add Message:"));
-            screen.printScreen();
-
-        }
-
-
-        while (true){
-            System.out.println("Lover Bot is on break, chat with his boring sibling");
-            screen.printScreen();
-            screen.botMessage(message("Ask question:"));
-
-        }
-
-
-
-    }
-}
-
-
-
-
 class Screen {
     private final List<String> messages = new ArrayList<>();
     private char[][] screen = new char[20][50];
@@ -500,6 +458,49 @@ class Screen {
     }
 
 }
+
+
+class LoveBot {
+    Screen screen = new Screen();
+    Scanner sc = new Scanner(System.in);
+
+    String message(String prompt){
+        System.out.print(prompt);
+        return sc.nextLine();
+    }
+    void start(){
+        screen.generateScreen();
+
+        screen.newMessageScreen();
+        screen.printScreen();
+        message("Read Message:");
+        screen.clear();
+        screen.addMessage("Remove First Text");
+        screen.printScreen();
+
+
+        while(!Bot_2.stop){
+
+            screen.addMessage(message("Add Message:"));
+            screen.printScreen();
+
+        }
+
+
+        while (true){
+            System.out.println("Lover Bot is on break, chat with his boring sibling");
+            screen.printScreen();
+            screen.botMessage(message("Ask question:"));
+
+        }
+
+
+
+    }
+}
+
+
+
 
 
 public class Main {
