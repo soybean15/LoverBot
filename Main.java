@@ -121,7 +121,7 @@ class Bot_2 extends Bot{
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"hindi", "di","gutom","wala"}));
         }else if (count==5){
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"salamat","thank", "thanks","oo","ikr","know"}));
-            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"ay", "ayy","haha","weh","di nga","echosero","bolero","joker"}));
+            reply_percentage.add(replyPercentage(msg,new String[]{"ay", "ayy","haha","weh","di nga","echosero","bolero","joker","luh"}, new String[]{"ay", "ayy","haha","weh","di nga","echosero","bolero","joker","luh"}));
             reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"hindi", "loko","di","najojoke","baliw", "wala","magpapalibre"}));
 
         }else if(count==10){
@@ -131,7 +131,7 @@ class Bot_2 extends Bot{
 
         }
         else {
-            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
+            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"ha","huh","hah","seryoso","hala","luh","yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
         }
         return reply_percentage;
     }
