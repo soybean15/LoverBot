@@ -96,7 +96,7 @@ class Bot {
     void generateChat(){
         chatSequence.put(0, new String[]{"Good Morning"});
         chatSequence.put(1, new String[]{"Kumain ka na?"});
-        chatSequence.put(2, new String[]{"Buti namn,sarap siguro ng ulam mo","kain kna po libre kita"});
+        chatSequence.put(2, new String[]{"Buti namn,sarap siguro ng ulam mo haha","kain kna po libre kita, jowk"});
         chatSequence.put(3, new String[]{"May tanong pala ko haha"});
         chatSequence.put(4, new String[]{"Floor wax ka ba?"});
         chatSequence.put(5, new String[]{"I love you, ay sorry nadulas haha"});
