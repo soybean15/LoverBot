@@ -94,12 +94,12 @@ class Bot {
 
 
     void generateChat(){
-        chatSequence.put(0, new String[]{"Good Morning"});
+        chatSequence.put(0, new String[]{"Good Morning crush"});
         chatSequence.put(1, new String[]{"Kumain ka na?"});
         chatSequence.put(2, new String[]{"Buti namn,sarap siguro ng ulam mo haha","kain kna po libre kita, jowk"});
         chatSequence.put(3, new String[]{"May tanong pala ko haha"});
-        chatSequence.put(4, new String[]{"Floor wax ka ba?"});
-        chatSequence.put(5, new String[]{"I love you, ay sorry nadulas haha"});
+        chatSequence.put(4, new String[]{"Are you an Exception?"});
+        chatSequence.put(5, new String[]{"because I want to catch you"});
         chatSequence.put(6, new String[]{"Ganda mo pala ngayon :)"});
         chatSequence.put(7, new String[]{"haha haba ng hair", "oo nga po haha","yieeh humble haha"});//(acceptance)(not sure)(denial)
         chatSequence.put(8, new String[]{"uhm..gusto ko lng sana sabihin na gusto kita"});
@@ -132,7 +132,7 @@ class Bot {
 
         }
         else {
-            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
+            reply_percentage.add(replyPercentage(msg,new String[]{""}, new String[]{"why","yieeh","sakto","lang","sige","bket","Remove","speed","bilis","hahaha","bye","baket","hi","hello","ano","thanks","salamat","sige","morning","morning","good","opo","oo","haha","ok","okay"}));
         }
         return reply_percentage;
     }
