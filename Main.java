@@ -102,7 +102,7 @@ class Bot {
         chatSequence.put(5, new String[]{"because I want to catch you"});
         chatSequence.put(6, new String[]{"Ganda mo pala ngayon :)"});
         chatSequence.put(7, new String[]{"haha haba ng hair", "oo nga po haha","yieeh humble haha"});//(acceptance)(not sure)(denial)
-        chatSequence.put(8, new String[]{"you are my loop condition"});
+        chatSequence.put(8, new String[]{"meron pa, You are my loop condition"});
         chatSequence.put(9, new String[]{"I keep coming back at you haha"});
         chatSequence.put(10, new String[]{"Nga pala dba sabi mo wala ka lakad sa 14?"});
         chatSequence.put(11, new String[]{"Mall tayo? libre ko"});
